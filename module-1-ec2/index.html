@@ -1,114 +1,324 @@
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranathi S Rao - Resume</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #E8E0F5, #DDF0FC);
+            color: #44445A;
+            line-height: 1.7;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(79, 65, 110, 0.15);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #CDB4DB, #A9D6F5);
+            color: #37334D;
+        }
+
+        .profile-circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            color: #8064A2;
+            font-size: 25px;
+            font-weight: bold;
+            border: 4px solid rgba(255, 255, 255, 0.7);
+        }
+
+        header h1 {
+            font-size: 34px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        .contact {
+            margin-top: 15px;
+        }
+
+        .contact p {
+            font-size: 14px;
+            margin: 4px 0;
+        }
+
+        section {
+            margin: 22px 30px;
+            padding: 22px;
+            background: #FCFAFF;
+            border-radius: 12px;
+            border-left: 5px solid #CDB4DB;
+        }
+
+        section h2 {
+            color: #8064A2;
+            font-size: 22px;
+            margin-bottom: 14px;
+            padding-bottom: 7px;
+            border-bottom: 2px solid #E8E0F5;
+        }
+
+        section p {
+            font-size: 15px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item h3 {
+            color: #4F628E;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #8064A2;
+            font-weight: 600;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #E8E0F5;
+            color: #655080;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #D8C8E8;
+        }
+
+        .skills span:hover {
+            background: #8064A2;
+            color: white;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tags span {
+            background: #DDF0FC;
+            color: #426A91;
+            padding: 3px 11px;
+            border-radius: 15px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            background: #F1EBF8;
+            color: #8064A2;
+            padding: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            section {
+                margin: 15px 12px;
+                padding: 17px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            section {
+                break-inside: avoid;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
 
-        <header>
-            <h1>Pranathi S Rao</h1>
-            <p>BCA Student | Aspiring Software Developer</p>
-            <p>Mysuru, Karnataka, India</p>
-            <p>
-                Email: raopranathi608@gmail.com |
-                LinkedIn: Your LinkedIn Profile
-            </p>
-        </header>
+<div class="container">
 
-        <section>
-            <h2>Summary</h2>
-            <p>
-                Motivated Bachelor of Computer Applications (BCA) student
-                at Amrita Vishwa Vidyapeetham, Mysuru, with an interest in
-                software development, web technologies, databases, and
-                cloud computing. Familiar with programming languages such
-                as C, C++, Java, and Python, along with SQL and HTML.
-                Eager to develop technical skills, work on practical
-                projects, and learn new technologies while building a
-                strong foundation in computer science.
-            </p>
-        </section>
+    <header>
+        <div class="profile-circle">PSR</div>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>C Programming</li>
-                <li>C++ Programming</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>SQL and Database Management</li>
-                <li>HTML and CSS</li>
-                <li>UI/UX Design using Figma</li>
-                <li>Basic Web Development</li>
-            </ul>
-        </section>
+        <h1>Pranathi S Rao</h1>
 
-        <section>
-            <h2>Experience</h2>
-            <h3>Academic and Personal Projects</h3>
-            <p>
-                Currently building programming and design skills through
-                academic assignments and practical projects. Gaining
-                experience in writing code, designing user interfaces,
-                working with databases, and solving programming problems.
-            </p>
-        </section>
+        <p class="subtitle">
+            BCA Student | Aspiring Software Developer
+        </p>
 
-        <section>
-            <h2>Education</h2>
+        <p>Mysuru, Karnataka, India</p>
+
+        <div class="contact">
+            <p>Email: your-email@example.com</p>
+            <p>LinkedIn: Your LinkedIn Profile</p>
+        </div>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            I am a motivated Bachelor of Computer Applications (BCA)
+            student at Amrita Vishwa Vidyapeetham, Mysuru, interested
+            in software development, cloud computing, databases and
+            UI/UX design. I enjoy learning new technologies and
+            applying my knowledge through academic projects. My goal
+            is to strengthen my technical skills and grow as a
+            software professional.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <span>C Programming</span>
+            <span>C++</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Figma</span>
+            <span>UI/UX Design</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+
+        <div class="item">
             <h3>Bachelor of Computer Applications (BCA)</h3>
-            <p>Amrita Vishwa Vidyapeetham, Mysuru</p>
-            <p>Currently Pursuing</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-
-            <h3>Python and SQL Database Connectivity</h3>
-            <p>
-                Developing a Gym Membership Management System using
-                Python and SQL, including database operations such as
-                INSERT, SELECT, UPDATE, and DELETE.
+            <p class="highlight">
+                Amrita Vishwa Vidyapeetham, Mysuru
             </p>
+            <p>Currently Pursuing</p>
+        </div>
+    </section>
 
+    <section>
+        <h2>Projects</h2>
+
+        <div class="item">
+            <h3>Gym Membership Management System</h3>
+            <p>
+                Developing a management system using Python and SQL
+                to maintain gym membership records and perform
+                INSERT, SELECT, UPDATE and DELETE operations.
+            </p>
+            <div class="tags">
+                <span>Python</span>
+                <span>SQL</span>
+            </div>
+        </div>
+
+        <div class="item">
             <h3>UI/UX Design Projects</h3>
             <p>
-                Designed user interface concepts and app screens using
-                Figma, focusing on simple layouts, usability, and
-                attractive visual design.
+                Designed application interface concepts using Figma,
+                focusing on attractive layouts, usability and
+                user-friendly navigation.
             </p>
+            <div class="tags">
+                <span>Figma</span>
+                <span>UI/UX Design</span>
+            </div>
+        </div>
 
-            <h3>HTML and CSS Web Development</h3>
+        <div class="item">
+            <h3>Personal Resume Website</h3>
             <p>
-                Practising webpage design and development using HTML
-                and CSS to create structured and user-friendly websites.
+                Created a personal resume webpage using HTML and CSS
+                to present educational qualifications, technical
+                skills and projects in a structured format.
             </p>
-        </section>
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Strengths</h2>
-            <ul>
-                <li>Calm under pressure</li>
-                <li>Willingness to learn</li>
-                <li>Problem-solving mindset</li>
-                <li>Creative thinking</li>
-            </ul>
-        </section>
+    <section>
+        <h2>Strengths</h2>
 
-        <section>
-            <h2>Interests</h2>
-            <ul>
-                <li>Software Development</li>
-                <li>Cloud Computing</li>
-                <li>UI/UX Design</li>
-                <li>Learning New Technologies</li>
-            </ul>
-        </section>
+        <div class="skills">
+            <span>Calm Under Pressure</span>
+            <span>Creative Thinking</span>
+            <span>Problem Solving</span>
+            <span>Willingness to Learn</span>
+        </div>
+    </section>
 
-    </div>
+    <section>
+        <h2>Areas of Interest</h2>
+        <p>
+            Software Development • Cloud Computing • UI/UX Design •
+            Database Management
+        </p>
+    </section>
+
+    <footer>
+        Thank you for visiting my resume!
+    </footer>
+
+</div>
+
 </body>
 </html>
 ```

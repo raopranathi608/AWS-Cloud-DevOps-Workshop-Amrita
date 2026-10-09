@@ -72,6 +72,17 @@
             margin: 4px 0;
         }
 
+        .contact a {
+            color: #37334D;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact a:hover {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+
         section {
             margin: 22px 30px;
             padding: 22px;
@@ -125,15 +136,18 @@
             font-size: 14px;
             font-weight: 600;
             border: 1px solid #D8C8E8;
+            transition: 0.3s;
         }
 
         .skills span:hover {
             background: #8064A2;
             color: white;
+            transform: translateY(-2px);
         }
 
         .tags {
             display: flex;
+            flex-wrap: wrap;
             gap: 8px;
             margin-top: 10px;
         }
@@ -159,6 +173,10 @@
         @media (max-width: 600px) {
             body {
                 padding: 10px;
+            }
+
+            header {
+                padding: 30px 15px;
             }
 
             header h1 {
@@ -205,13 +223,26 @@
         <p>Mysuru, Karnataka, India</p>
 
         <div class="contact">
-            <p>Email: raopranathi608@gmail.com</p>
-            <p>LinkedIn: LinkedIn.com</p>
+            <p>
+                Email:
+                <a href="mailto:raopranathi608@gmail.com">
+                    raopranathi608@gmail.com
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.linkedin.com/" target="_blank"
+                   rel="noopener noreferrer">
+                    LinkedIn Profile
+                </a>
+            </p>
         </div>
     </header>
 
     <section>
         <h2>About Me</h2>
+
         <p>
             I am a motivated Bachelor of Computer Applications (BCA)
             student at Amrita Vishwa Vidyapeetham, Mysuru, interested
@@ -244,9 +275,11 @@
 
         <div class="item">
             <h3>Bachelor of Computer Applications (BCA)</h3>
+
             <p class="highlight">
                 Amrita Vishwa Vidyapeetham, Mysuru
             </p>
+
             <p>Currently Pursuing</p>
         </div>
     </section>
@@ -256,11 +289,13 @@
 
         <div class="item">
             <h3>Gym Membership Management System</h3>
+
             <p>
                 Developing a management system using Python and SQL
                 to maintain gym membership records and perform
                 INSERT, SELECT, UPDATE and DELETE operations.
             </p>
+
             <div class="tags">
                 <span>Python</span>
                 <span>SQL</span>
@@ -269,11 +304,13 @@
 
         <div class="item">
             <h3>UI/UX Design Projects</h3>
+
             <p>
                 Designed application interface concepts using Figma,
                 focusing on attractive layouts, usability and
                 user-friendly navigation.
             </p>
+
             <div class="tags">
                 <span>Figma</span>
                 <span>UI/UX Design</span>
@@ -282,11 +319,13 @@
 
         <div class="item">
             <h3>Personal Resume Website</h3>
+
             <p>
                 Created a personal resume webpage using HTML and CSS
                 to present educational qualifications, technical
                 skills and projects in a structured format.
             </p>
+
             <div class="tags">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -307,6 +346,7 @@
 
     <section>
         <h2>Areas of Interest</h2>
+
         <p>
             Software Development • Cloud Computing • UI/UX Design •
             Database Management

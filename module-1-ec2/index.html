@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranathi S Rao - Resume</title>
+
+    <title>Pranathi S Rao | Professional Resume</title>
 
     <style>
+        /* General Styling */
         * {
             margin: 0;
             padding: 0;
@@ -14,193 +16,239 @@
         }
 
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #E8E0F5, #DDF0FC);
-            color: #44445A;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #EEF1F6;
+            color: #374151;
             line-height: 1.7;
-            padding: 30px 15px;
+            padding: 35px 15px;
         }
 
-        .container {
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Resume Container */
+        .resume {
             max-width: 900px;
             margin: auto;
-            background: white;
-            border-radius: 20px;
+            background: #FFFFFF;
+            box-shadow: 0 8px 30px rgba(25, 42, 70, 0.10);
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 12px 35px rgba(79, 65, 110, 0.15);
         }
 
+        /* Header */
         header {
-            text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #CDB4DB, #A9D6F5);
-            color: #37334D;
-        }
-
-        .profile-circle {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            color: #8064A2;
-            font-size: 25px;
-            font-weight: bold;
-            border: 4px solid rgba(255, 255, 255, 0.7);
+            background: #172B4D;
+            color: #FFFFFF;
+            padding: 42px 45px;
+            border-bottom: 5px solid #A99BCB;
         }
 
         header h1 {
             font-size: 34px;
-            margin-bottom: 5px;
+            font-weight: 700;
             letter-spacing: 1px;
+            margin-bottom: 4px;
         }
 
-        .subtitle {
+        .role {
             font-size: 17px;
-            font-weight: 600;
+            color: #D9D4E8;
+            font-weight: 500;
+            margin-bottom: 18px;
         }
 
         .contact {
-            margin-top: 15px;
-        }
-
-        .contact p {
-            font-size: 14px;
-            margin: 4px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            font-size: 13px;
+            color: #E5EAF3;
         }
 
         .contact a {
-            color: #37334D;
-            text-decoration: none;
-            font-weight: 600;
+            overflow-wrap: anywhere;
         }
 
         .contact a:hover {
-            color: #FFFFFF;
+            color: #C8B9E5;
             text-decoration: underline;
         }
 
+        /* Main Content */
+        main {
+            padding: 15px 45px 35px;
+        }
+
         section {
-            margin: 22px 30px;
-            padding: 22px;
-            background: #FCFAFF;
-            border-radius: 12px;
-            border-left: 5px solid #CDB4DB;
+            margin-top: 25px;
         }
 
         section h2 {
-            color: #8064A2;
-            font-size: 22px;
+            color: #172B4D;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            border-bottom: 2px solid #DCD5EA;
+            padding-bottom: 8px;
             margin-bottom: 14px;
-            padding-bottom: 7px;
-            border-bottom: 2px solid #E8E0F5;
         }
 
         section p {
-            font-size: 15px;
+            font-size: 14px;
+            color: #4B5563;
         }
 
-        .item {
-            margin-bottom: 20px;
+        /* Education and Project Entries */
+        .entry {
+            margin-bottom: 18px;
         }
 
-        .item:last-child {
+        .entry:last-child {
             margin-bottom: 0;
         }
 
-        .item h3 {
-            color: #4F628E;
-            font-size: 17px;
-            margin-bottom: 5px;
+        .entry h3 {
+            font-size: 15px;
+            color: #243B64;
+            font-weight: 700;
+            margin-bottom: 3px;
         }
 
-        .highlight {
-            color: #8064A2;
+        .organization {
+            font-size: 14px;
+            color: #78659B;
             font-weight: 600;
         }
 
+        .description {
+            margin-top: 5px;
+        }
+
+        /* Skills */
         .skills {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 9px;
         }
 
         .skills span {
-            background: #E8E0F5;
-            color: #655080;
-            padding: 7px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: 600;
-            border: 1px solid #D8C8E8;
-            transition: 0.3s;
+            display: inline-block;
+            background: #F0EDF7;
+            color: #4D426B;
+            border: 1px solid #DED7ED;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
         }
 
-        .skills span:hover {
-            background: #8064A2;
-            color: white;
-            transform: translateY(-2px);
-        }
-
+        /* Project Technology Labels */
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 10px;
+            gap: 7px;
+            margin-top: 8px;
         }
 
         .tags span {
-            background: #DDF0FC;
-            color: #426A91;
-            padding: 3px 11px;
-            border-radius: 15px;
+            background: #EEF3FA;
+            color: #34547B;
+            padding: 2px 9px;
             font-size: 12px;
-            font-weight: 600;
+            border-radius: 3px;
         }
 
+        /* Two-Column Details */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .details-grid section {
+            margin-top: 25px;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            background: #F1EBF8;
-            color: #8064A2;
-            padding: 20px;
-            font-size: 14px;
-            font-weight: 600;
+            padding: 15px;
+            background: #F5F6FA;
+            color: #6B7280;
+            font-size: 12px;
+            border-top: 1px solid #E5E7EB;
         }
 
+        /* Responsive Layout */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
             }
 
             header {
-                padding: 30px 15px;
+                padding: 30px 22px;
             }
 
             header h1 {
                 font-size: 27px;
             }
 
-            section {
-                margin: 15px 12px;
-                padding: 17px;
+            .role {
+                font-size: 15px;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            main {
+                padding: 10px 22px 25px;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+                gap: 0;
             }
         }
 
+        /* Print and PDF */
         @media print {
-            body {
-                background: white;
-                padding: 0;
+            @page {
+                size: A4;
+                margin: 12mm;
             }
 
-            .container {
-                box-shadow: none;
+            body {
+                background: #FFFFFF;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .resume {
                 max-width: 100%;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            header {
+                padding: 28px 32px;
+            }
+
+            main {
+                padding: 8px 32px 20px;
             }
 
             section {
+                margin-top: 18px;
+                break-inside: avoid;
+            }
+
+            .entry {
                 break-inside: avoid;
             }
         }
@@ -209,152 +257,176 @@
 
 <body>
 
-<div class="container">
+<div class="resume">
 
+    <!-- Header -->
     <header>
-        <div class="profile-circle">PSR</div>
-
         <h1>Pranathi S Rao</h1>
 
-        <p class="subtitle">
-            BCA Student | Aspiring Software Developer
+        <p class="role">
+            Bachelor of Computer Applications (BCA) Student
         </p>
 
-        <p>Mysuru, Karnataka, India</p>
-
         <div class="contact">
-            <p>
+            <span>Mysuru, Karnataka, India</span>
+
+            <span>
                 Email:
                 <a href="mailto:raopranathi608@gmail.com">
                     raopranathi608@gmail.com
                 </a>
-            </p>
+            </span>
 
-            <p>
+            <span>
                 LinkedIn:
-                <a href="https://www.linkedin.com/" target="_blank"
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
                    rel="noopener noreferrer">
                     LinkedIn Profile
                 </a>
-            </p>
+            </span>
         </div>
     </header>
 
-    <section>
-        <h2>About Me</h2>
+    <!-- Main Resume -->
+    <main>
 
-        <p>
-            I am a motivated Bachelor of Computer Applications (BCA)
-            student at Amrita Vishwa Vidyapeetham, Mysuru, interested
-            in software development, cloud computing, databases and
-            UI/UX design. I enjoy learning new technologies and
-            applying my knowledge through academic projects. My goal
-            is to strengthen my technical skills and grow as a
-            software professional.
-        </p>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-
-        <div class="skills">
-            <span>C Programming</span>
-            <span>C++</span>
-            <span>Java</span>
-            <span>Python</span>
-            <span>SQL</span>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Figma</span>
-            <span>UI/UX Design</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-
-        <div class="item">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-
-            <p class="highlight">
-                Amrita Vishwa Vidyapeetham, Mysuru
-            </p>
-
-            <p>Currently Pursuing</p>
-        </div>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
-
-        <div class="item">
-            <h3>Gym Membership Management System</h3>
+        <!-- Professional Summary -->
+        <section>
+            <h2>Professional Summary</h2>
 
             <p>
-                Developing a management system using Python and SQL
-                to maintain gym membership records and perform
-                INSERT, SELECT, UPDATE and DELETE operations.
+                Motivated Bachelor of Computer Applications student
+                at Amrita Vishwa Vidyapeetham, Mysuru, with an
+                interest in software development, database
+                management, cloud computing, and UI/UX design.
+                Developing programming and problem-solving skills
+                through academic coursework and practical projects.
+                Eager to apply technical knowledge, gain hands-on
+                experience, and contribute to software development
+                and technology-related projects.
             </p>
+        </section>
 
-            <div class="tags">
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+
+            <div class="skills">
+                <span>C Programming</span>
+                <span>C++</span>
+                <span>Java</span>
                 <span>Python</span>
                 <span>SQL</span>
-            </div>
-        </div>
-
-        <div class="item">
-            <h3>UI/UX Design Projects</h3>
-
-            <p>
-                Designed application interface concepts using Figma,
-                focusing on attractive layouts, usability and
-                user-friendly navigation.
-            </p>
-
-            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
                 <span>Figma</span>
                 <span>UI/UX Design</span>
             </div>
-        </div>
+        </section>
 
-        <div class="item">
-            <h3>Personal Resume Website</h3>
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
 
-            <p>
-                Created a personal resume webpage using HTML and CSS
-                to present educational qualifications, technical
-                skills and projects in a structured format.
-            </p>
+            <div class="entry">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
 
-            <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
+                <p class="organization">
+                    Amrita Vishwa Vidyapeetham, Mysuru
+                </p>
+
+                <p>Currently Pursuing</p>
             </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Academic Projects</h2>
+
+            <div class="entry">
+                <h3>Gym Membership Management System</h3>
+
+                <p class="description">
+                    Developing a database-driven application to
+                    manage gym membership records and perform
+                    essential database operations, including
+                    insertion, retrieval, updating, and deletion
+                    of records.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Database Connectivity</span>
+                </div>
+            </div>
+
+            <div class="entry">
+                <h3>UI/UX Design Projects</h3>
+
+                <p class="description">
+                    Creating application interface designs with
+                    a focus on usability, consistent layouts,
+                    visual hierarchy, and user-friendly navigation.
+                </p>
+
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>UI/UX Design</span>
+                    <span>Prototyping</span>
+                </div>
+            </div>
+
+            <div class="entry">
+                <h3>Personal Resume Website</h3>
+
+                <p class="description">
+                    Developing a responsive personal resume
+                    webpage to present academic qualifications,
+                    technical skills, and projects using a
+                    structured layout and custom styling.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Responsive Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Details -->
+        <div class="details-grid">
+
+            <section>
+                <h2>Core Strengths</h2>
+
+                <div class="skills">
+                    <span>Problem Solving</span>
+                    <span>Creative Thinking</span>
+                    <span>Calm Under Pressure</span>
+                    <span>Adaptability</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Areas of Interest</h2>
+
+                <p>
+                    Software Development<br>
+                    Cloud Computing<br>
+                    Database Management<br>
+                    UI/UX Design
+                </p>
+            </section>
+
         </div>
-    </section>
 
-    <section>
-        <h2>Strengths</h2>
-
-        <div class="skills">
-            <span>Calm Under Pressure</span>
-            <span>Creative Thinking</span>
-            <span>Problem Solving</span>
-            <span>Willingness to Learn</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Areas of Interest</h2>
-
-        <p>
-            Software Development • Cloud Computing • UI/UX Design •
-            Database Management
-        </p>
-    </section>
+    </main>
 
     <footer>
-        Thank you for visiting my resume!
+        Pranathi S Rao | Resume
     </footer>
 
 </div>
